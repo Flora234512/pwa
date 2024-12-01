@@ -1,7 +1,7 @@
 import express from 'express';
 import morgan from 'morgan';
 import path from 'path';
-import employees from './employees.json' assert { type: 'json' };
+import employees from './employees.json' with {type: 'json'};
 
 const dirname = path.resolve();
 const app = express();
